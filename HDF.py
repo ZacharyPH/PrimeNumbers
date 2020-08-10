@@ -25,12 +25,12 @@ def open_hdf():
 
 
 def main():
-    # init_hdf()
-    # d = fill_hdf()
+    init_hdf()
+    d = fill_hdf()
     d = open_hdf()
-    d["Primes"][40 * 1000 * 1000 + 15: 40 * 1000 * 1000 + 28]
+    print(d["Primes"][40 * 1000 * 1000 + 15: 40 * 1000 * 1000 + 28])
+    pass
 
 
 if __name__ == "__main__":
     main()
-# TODO: Sounds like I might need a Virtual Dataset
